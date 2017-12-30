@@ -1,0 +1,53 @@
+// See LICENSE for copyright and license details
+// vim: set ft=asciidoc:
+XINPUTD(1)
+==========
+:doctype: manpage
+
+NAME
+----
+xinputd - simple Xorg input device watcher
+
+SYNOPSIS
+--------
+*xinputd* ['OPTIONS'] 'COMMAND'
+
+OPTIONS
+-------
+*-h*::
+	Print help and exit
+*-n*:: 
+	Don't fork to background
+
+DESCRIPTION
+-----------
+xinputd(1) is a tool which watches for changes in number of Xorg input devices
+and executes a command when a change occurs i.e. if a new keyboard or mouse is
+plugged in. By default, xinputd will fork to the background and exit when the
+xserver exits.
+
+
+EXAMPLE
+-------
+An example usage could be 
+
+----
+xinputd setxkbmap -option caps:escape
+----
+
+which will execute
+
+----
+setxkbmap -option caps:escape
+----
+
+whenever a change is detected in the number of Xorg input devices.
+
+RESOURCES
+---------
+
+github: http://github.com/bbenne10/xinputd
+
+AUTHOR 
+------
+Bryan Bennett <bbenne10@gmail.com>
