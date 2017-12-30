@@ -30,6 +30,7 @@ More complex solutions may be better solved with a script as the execution targe
 ## HERITAGE AND THANKS
 
 This project owes quite a bit to portix for [srandrd](https://bitbucket.com/portix/srandrd).
+(If interested, my fork of srandr can be found [here](https://github.com/bbenne10/srandrd).)
 Without his work there, I would never have considered this a viable approach to take to solve this issue.
 Additionally, I cribbed quite a bit of code from that project. Thanks, portix!
 
