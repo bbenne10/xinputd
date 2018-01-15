@@ -19,7 +19,7 @@ CPPFLAGS  += -D_DEFAULT_SOURCE
 CPPFLAGS  += -DNAME=\"$(TARGET)\" -DVERSION=\"$(VERSION)\"
 CPPFLAGS	+= -DCOPYRIGHT=\"$(COPYRIGHT)\" -DLICENSE=\"$(LICENSE)\"
 
-LDFLAGS		:= -lxcb  -lxcb-xinput
+LDFLAGS		:= -lxcb  -lxcb-xinput -l xcb-randr
 
 all: $(TARGET)
 
